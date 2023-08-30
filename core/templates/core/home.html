@@ -1,0 +1,15 @@
+<!--Herencia de templates-->
+{% extends 'core/base.html' %}
+
+<!--Título cambiante-->
+{% block title %}Portada{% endblock %}
+
+<!--Imagen de fondo cambiante-->
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock  %}
+
+<!--Texto cabecera cambiante-->
+{% block header %}
+<h1>Victor Ojeda</h1>
+<span class="subheading">Estudiante de desarrollo de Software</span>
+{% endblock  %}
+
